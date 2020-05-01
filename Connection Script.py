@@ -6,7 +6,7 @@ import asyncio
 print("This sript was written by SememN (Vk: https://vk.com/rijiy_chelik, github: https://github.com/SememN)")
 
 bot = commands.Bot(".", self_bot=True)
-TOKEN = input("введи свой токен: ")
+TOKEN = input("введи свой токен (input ypor token): ")
 @bot.command()
 async def connect(ctx, voiceChannelName):
     Guild = ctx.author.guild
@@ -23,12 +23,12 @@ async def connect(ctx, voiceChannelName):
                 await name.connect()
                 print("connected")
                 print("stopping script...")
-                input("Можешь выключать этот скрипт, ты подключен к войс-чату)")
+                input("Можешь выключать этот скрипт, ты подключен к войс-чату) You can stop this script, you connected to the Voice Chat)")
             elif name.user_limit == None:
                 print("connecting")
                 await name.connect()
                 print("connected")
                 print("stopping script...")
-                input("Можешь выключать этот скрипт, ты подключен к войс-чату)")
+                input("Можешь выключать этот скрипт, ты подключен к войс-чату) You can stop this script, you connected to the Voice Chat)")
 
 bot.run(TOKEN, bot=False)
